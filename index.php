@@ -1,18 +1,19 @@
 <?php
-require_once 'init.php';
+require_once __DIR__ . "/init.php";
 ?>
 <html>
-    <head>Página Inicial</head>
+    <head><title>Página inicial</title></head>
     <body>
         <center>
             <h1>SenaiEvents</h1>
         </center>
-        <?php foreach($_SESSION['eventos'] as $evento => $id): ?>
-            <h2><?= $_SESSION['titulo'] ?></h2>
-            <p><?= $_SESSION['descricao'] ?></p>
-            <p>Data: <?= $_SESSION['data'] ?></p>
-            <p>Área: <?= $_SESSION['area'] ?></p>
-            <a href="detalhes.php?id=<?= $id ?>"></a>
+        <?php foreach($_SESSION['eventos'] as $id => $eventos): ?>
+            <h2><?= $eventos['titulo'] ?></h2>
+            <p><b><?= $eventos['descricao'] ?></b></p>
+            <p>Data: <?= $eventos['data'] ?></p>
+            <p>Área: <?= $eventos['area'] ?></p>
+            <p><a href="detalhes.php?id=<?= $id ?>">Detalhes</a></p>
+            <p><a href="edicao.php?id=<?= $id ?>">Editar</a></p>
         <?php endforeach ?>
     </body>
 </html>

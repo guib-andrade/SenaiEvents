@@ -7,9 +7,9 @@ require_once 'init.php';
         <title>Cadastro - SenaiEvents</title>
     </head>
     <body>
-        <h1>Cadastre-se para o SenaiEvents</h1>
+        <center><h1>Cadastre-se para o SenaiEvents</h1></center>
 
-        <form action="">
+        <center><form action="">
             <label for="titulo">Título:</label>
             <input type="text" id="titulo" name="titulo" required><br><br>
 
@@ -42,6 +42,6 @@ require_once 'init.php';
 
             <button type="submit">Cadastrar</button>
 
-        </form>
+        </form></center>
     </body>
 </html>

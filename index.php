@@ -8,6 +8,7 @@ require_once __DIR__ . "/init.php";
         <center>
             <h1>SenaiEvents</h1>
         </center>
+        <a href="remocao.php">Remover Notícia</a>
         <?php foreach($_SESSION['eventos'] as $id => $eventos): ?>
             <h2><?= $eventos['titulo'] ?></h2>
             <p><b><?= $eventos['descricao'] ?></b></p>

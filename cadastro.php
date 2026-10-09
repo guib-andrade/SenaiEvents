@@ -1,5 +1,5 @@
 <?php
-require_once 'init.php';
+require_once __DIR__ . '/init.php';
 ?>
 
 <html>
@@ -7,14 +7,14 @@ require_once 'init.php';
         <title>Cadastro - SenaiEvents</title>
     </head>
     <body>
-        <center><h1>Cadastre-se para o SenaiEvents</h1></center>
+        <center><h1 border="1" style="border: 1px solid #a33737; padding: 10px; border-radius: 5px; background-color: #c94242; font-family: Arial, sans-serif;">----- Cadastre-se para o SenaiEvents -----</h1></center>
 
-        <center><form action="">
+        <center><form action="/processaCadastro.php" method="POST" border="1" style="width: 400px; padding: 20px; border: 1px solid #000000; border-radius: 5px; background-color: #f9f9f9;">
             <label for="titulo">Título:</label>
             <input type="text" id="titulo" name="titulo" required><br><br>
 
             <label for="descricao">Descrição:</label>
-            <textarea id="descricao" name="descricao" required></textarea><br><br>
+            <input id="descricao" name="descricao" required><br><br>
 
             <label for="area">Área:</label>
             <input type="text" id="area" name="area" required><br><br>

@@ -19,7 +19,7 @@ else:
     <a href="/index.php">Retornar</a>
     <h1><?= $_SESSION['eventos'][$eventoEscolhido]['titulo'] ?></h1>
     <h2><b><?= $_SESSION['eventos'][$eventoEscolhido]['descricao'] ?></b></h2>
-    <h2><b><?= $_SESSION['eventos'][$eventoEscolhido]['responsavel'] ?></b></h2>
+    <h2>Responsável: <b><?= $_SESSION['eventos'][$eventoEscolhido]['responsavel'] ?></b></h2>
     <h2>Data: <?= $_SESSION['eventos'][$eventoEscolhido]['data'] ?></h2>
     <h2>Área: <?= $_SESSION['eventos'][$eventoEscolhido]['area'] ?></h2>
     <h3>Horário de Início: <?= $_SESSION['eventos'][$eventoEscolhido]['inicio'] ?></h3>

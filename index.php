@@ -6,6 +6,7 @@ require_once __DIR__ . "/init.php";
     <body>
         <a href="resetaSessao.php">Resetar Sessão</a>
         <a href="remocao.php">Remover Notícia</a>
+        <a href="edicao.php">Editar Noticia</a>
         <center>
             <h1>SenaiEvents</h1>
         </center>
@@ -15,7 +16,6 @@ require_once __DIR__ . "/init.php";
             <p>Data: <?= $eventos['data'] ?></p>
             <p>Área: <?= $eventos['area'] ?></p>
             <p><a href="detalhes.php?id=<?= $id ?>">Detalhes</a></p>
-            <p><a href="edicao.php?id=<?= $id ?>">Editar</a></p>
         <?php endforeach ?>
     </body>
 </html>

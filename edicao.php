@@ -8,7 +8,7 @@
     <body>
         <center>
         <h1>SenaiEvents</h1>
-        <form action="formEdicao.php" method="POST">
+        <form action="formEdicao.php" method="GET">
             <select name="id" id="id">
                 <?php foreach($_SESSION['eventos'] as $chave => $evento): ?>
                     <option value="<?= $chave ?>"><?= $evento['titulo'] ?></option>

@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . "/init.php";
-$indiceEvento = $_POST['id'];
+$indiceEvento = $_GET['id'];
 $noticiaAtual = $_SESSION['eventos'][$indiceEvento];
 ?>
 <html>
@@ -8,7 +8,7 @@ $noticiaAtual = $_SESSION['eventos'][$indiceEvento];
     <body>
         <center>
             <h1>Edicao - SenaiEvents</h1>
-        <form action="processaCadastro.php" method="POST">
+        <form action="processaEdicao.php?id=<?= $indiceEvento ?>" method="POST">
             <label for="titulo">Titulo: </label>
             <input type="text" name="titulo" id="titulo"
             value="<?= $noticiaAtual['titulo'] ?>">

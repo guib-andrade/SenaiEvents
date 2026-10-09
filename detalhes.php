@@ -1,6 +1,17 @@
 <?php
 require_once __DIR__ . "/init.php";
 $eventoEscolhido = $_GET['id'];
+if(!isset($_SESSION['eventos'][$eventoEscolhido])):
+    print "
+    <html>
+    <body>
+    <center>
+    <h1>Atenção! Esse evento não existe/expirou, por favor, retornar a página inicial.</h1>
+    </center>
+    </body>
+    </html>
+    ";
+else:
 ?>
 <html>
     <head><title>Detalhes-<?= $_SESSION['eventos'][$eventoEscolhido]['titulo'] ?></title></head>
@@ -13,3 +24,4 @@ $eventoEscolhido = $_GET['id'];
     <h3>Horário de Finalização: <?= $_SESSION['eventos'][$eventoEscolhido]['fim'] ?></h3>
     <h3>Local do Evento: <?= $_SESSION['eventos'][$eventoEscolhido]['local'] ?></h3>
 </html>
+<?php endif ?>

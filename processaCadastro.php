@@ -37,5 +37,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 }
 
-$_SESSION['eventos'][] = $_POST;
+$_SESSION['eventos'][$_SESSION['proximo_id']] = $_POST;
 header('Location: index.php');

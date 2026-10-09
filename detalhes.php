@@ -7,6 +7,7 @@ if(!isset($_SESSION['eventos'][$eventoEscolhido])):
     <body>
     <center>
     <h1>Atenção! Esse evento não existe/expirou, por favor, retornar a página inicial.</h1>
+    <button><a href='/index.php'>Retornar</a></button>
     </center>
     </body>
     </html>
@@ -15,6 +16,7 @@ else:
 ?>
 <html>
     <head><title>Detalhes-<?= $_SESSION['eventos'][$eventoEscolhido]['titulo'] ?></title></head>
+    <a href="/index.php">Retornar</a>
     <h1><?= $_SESSION['eventos'][$eventoEscolhido]['titulo'] ?></h1>
     <h2><b><?= $_SESSION['eventos'][$eventoEscolhido]['descricao'] ?></b></h2>
     <h2><b><?= $_SESSION['eventos'][$eventoEscolhido]['responsavel'] ?></b></h2>

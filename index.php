@@ -4,6 +4,7 @@ require_once __DIR__ . "/init.php";
 <html>
     <head><title>Página inicial</title></head>
     <body>
+        <a href="resetaSessao.php">Resetar Sessão</a>
         <center>
             <h1>SenaiEvents</h1>
         </center>

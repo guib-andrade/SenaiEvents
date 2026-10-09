@@ -9,7 +9,7 @@ require_once 'init.php';
     <body>
         <center><h1>Cadastre-se para o SenaiEvents</h1></center>
 
-        <center><form action="">
+        <center><form action="/processaCadastro.php" method="POST">
             <label for="titulo">Título:</label>
             <input type="text" id="titulo" name="titulo" required><br><br>
 

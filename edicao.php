@@ -26,8 +26,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'local' => $local,
         'responsavel' => $responsavel
     ];
+    header('Location: index.php');
+    exit;
 }
+
+$evento = $_SESSION['eventos'][$id];
 ?>
+
 <html>
     <head></head>
     <body>
